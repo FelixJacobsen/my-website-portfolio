@@ -16,8 +16,11 @@ const Home = () => {
           I'm a Full Stack Developer
         </h2>
         <div>
-          <button className="text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-red-600 hover:border-red-600">
-            View my work <HiArrowNarrowRight className="ml-3" />
+          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-red-600 hover:border-red-600">
+            View my work
+            <span className="group-hover:rotate-90 duration-300">
+              <HiArrowNarrowRight className="ml-3" />
+            </span>
           </button>
         </div>
       </div>
