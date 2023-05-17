@@ -4,6 +4,11 @@ import Docker from "../assets/docker-logo.svg";
 import Spring from "../assets/spring-logo.svg";
 import MySQL from "../assets/mysql-logo.svg";
 import Git from "../assets/git-logo.svg";
+import TailWind from "../assets/tailwind-logo.svg";
+import JavaScript from "../assets/javascript-logo.svg";
+import MongoDB from "../assets/mongodb-logo.svg";
+import Html5 from "../assets/html5-logo.svg";
+import ReactLogo from "../assets/react-logo.svg";
 
 const Skills = () => {
   return (
@@ -14,34 +19,66 @@ const Skills = () => {
             Experience
           </p>
           <p className="py-4 ">
-            These are the frameworks I've experienced with
+            These are the technologies, tools and frameworks that I have
+            experience with
           </p>
         </div>
 
         <div className="w-full grid grid-cols2 sm:grid-cols-4 text-center py-8">
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Java} alt="Java icon" />
-            <p>Java</p>
+          <div className="grid">
+            <p className="text-4xl">Backend</p>
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" src={Java} alt="Java icon" />
+              <p>Java</p>
+            </div>
+
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" src={Spring} alt="Java icon" />
+              <p>Spring</p>
+            </div>
           </div>
 
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={MySQL} alt="Java icon" />
-            <p>MySQL</p>
+          <div className="grid">
+            <p className="text-4xl">Development tools</p>
+
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" src={Docker} alt="Java icon" />
+              <p>Docker</p>
+            </div>
+
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" src={Git} alt="Java icon" />
+              <p>Git</p>
+            </div>
           </div>
 
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Docker} alt="Java icon" />
-            <p>Docker</p>
+          <div className="grid">
+            <p className="text-4xl">Frontend</p>
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" src={Html5} alt="Java icon" />
+              <p>HTML5</p>
+            </div>
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" src={ReactLogo} alt="Java icon" />
+              <p>React</p>
+            </div>
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" src={TailWind} alt="Java icon" />
+              <p>Tailwind</p>
+            </div>
           </div>
 
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Spring} alt="Java icon" />
-            <p>Spring</p>
-          </div>
+          <div className="grid">
+            <p className="text-4xl">Databases</p>
 
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Git} alt="Java icon" />
-            <p>Git</p>
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" src={MySQL} alt="Java icon" />
+              <p>MySQL</p>
+            </div>
+            <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+              <img className="w-20 mx-auto" src={MongoDB} alt="Java icon" />
+              <p>MongoDB</p>
+            </div>
           </div>
         </div>
       </div>

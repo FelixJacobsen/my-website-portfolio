@@ -1,5 +1,5 @@
 import React from "react";
-
+import { HiArrowNarrowRight } from "react-icons/hi";
 const Contact = () => {
   return (
     <div
@@ -15,8 +15,10 @@ const Contact = () => {
           <p className="text-4xl font-bold inline border-b-4 border-red-600 text-gray-300">
             Contact
           </p>
-          <p>
-            Submit the form below or sned me an email - addmyemail@gmail.com
+          <p className="text-gray-300 py-4">
+            Submit the form below or send me an email
+            <HiArrowNarrowRight className="inline" />
+            feljactech@gmail.com
           </p>
         </div>
         <input
@@ -38,7 +40,7 @@ const Contact = () => {
           placeholder="Message"
         ></textarea>
         <button className="text-white border-2 hover:bg-red-600 hover:border-red-600 px-4 py-3 my-8 mx-auto flex items-center ">
-          Let's contect
+          Let's connect!
         </button>
       </form>
     </div>
