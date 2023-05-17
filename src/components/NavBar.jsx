@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/FJ-logo.png";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -18,10 +19,26 @@ const NavBar = () => {
 
       {/* MENU*/}
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Contact</li>
+        <li>
+          <Link to="home" smooth={true} offset={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="about" smooth={true} offset={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="skills" smooth={true} offset={true} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" smooth={true} offset={true} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
 
       {/* Hamburger */}
