@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Logo from "../assets/FJ-logo.png";
+import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
@@ -14,7 +14,7 @@ const NavBar = () => {
       text-gray-300
     >
       <div>
-        <img src={Logo} alt="Logo with FJ text" style={{ width: "50px" }}></img>
+        <img src={Logo} alt="Logo with FJ text" style={{ width: "80px" }}></img>
       </div>
 
       {/* MENU*/}
@@ -32,6 +32,11 @@ const NavBar = () => {
         <li>
           <Link to="skills" smooth={true} offset={true} duration={500}>
             Skills
+          </Link>
+        </li>
+        <li>
+          <Link to="projects" smooth={true} offset={true} duration={500}>
+            Projects
           </Link>
         </li>
         <li>

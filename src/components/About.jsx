@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen bg-[#0a192f] text-gray-300 ">
+    <div name="about" className="w-full h-screen  text-black ">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000x] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
@@ -15,11 +15,16 @@ const About = () => {
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-rioght text-4xl font-bold">
             <p>
-              Hello! I'm Felix, nice to meet you. Feel free to explore my
-              website.
+              Hello! I'm Felix, nice to meet you. This is my website to showcase
+              my skills and my personal projects
             </p>
           </div>
           <div>
+            <p>
+              I have recently graduated from a two-year program in Java
+              development. The education was full-stack and has given me the
+              opportunity to work with both frontend and backend development.
+            </p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
