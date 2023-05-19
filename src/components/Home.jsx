@@ -17,7 +17,8 @@ const Home = () => {
               I'm a Full Stack Developer
             </h2>
             <h2 className="text-[#8892b0] py-4 max-w-[700px]">
-              I'm a Full Stack Developer
+              I am a full-stack developer, specializing in backend development
+              with a focus on Java.
             </h2>
             <Link to="projects" smooth={true} offset={true} duration={500}>
               <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-red-600 hover:border-red-600">
