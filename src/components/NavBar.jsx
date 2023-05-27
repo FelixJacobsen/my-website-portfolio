@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -11,11 +13,16 @@ const NavBar = () => {
     <div
       className="fixed w-full h-[80px] flex justify-between 
     items-center px-4 bg-[#0a192f] text-gray-300"
-      text-gray-300
     >
-      <div>
-        <img src={Logo} alt="Logo with FJ text" style={{ width: "80px" }}></img>
-      </div>
+      <Link to="home">
+        <div>
+          <img
+            src={Logo}
+            alt="Logo with FJ text"
+            style={{ width: "80px", cursor: "pointer" }}
+          ></img>
+        </div>
+      </Link>
 
       {/* MENU*/}
       <ul className="hidden md:flex">
@@ -106,8 +113,52 @@ const NavBar = () => {
         </li>
       </ul>
 
-      {/* m*/}
-      <div className="hidden"></div>
+      {/* Social icons */}
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+        <ul>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://www.linkedin.com/in/felix-jacobsen-446083232/"
+            >
+              Linkedin <FaLinkedin size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="http://www.github.com/felixjacobsen"
+            >
+              Github <FaGithub size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="contact"
+            >
+              Email <HiOutlineMail size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://docdro.id/1ZFpwCm"
+            >
+              Swedish resume
+              <BsFillPersonLinesFill size={30} />
+            </a>
+          </li>
+          {/* <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://docdro.id/1ZFpwCm"
+            >
+              English resume <BsFillPersonLinesFill size={30} />
+            </a>
+          </li> */}
+        </ul>
+      </div>
     </div>
   );
 };
