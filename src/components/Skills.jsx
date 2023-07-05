@@ -30,11 +30,11 @@ const Skills = () => {
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center py-8 gap-4">
           <div className="grid gap-6">
             <p className="text-lg sm:text-4xl lg:text-2xl mb-4">Backend</p>
-            <div className="shadow-md shadow-[#040c16]">
+            <div className="shadow-2xl">
               <img className="w-20 mx-auto" src={Java} alt="Java icon" />
               <p>Java</p>
             </div>
-            <div className="shadow-md shadow-[#040c16] ">
+            <div className="shadow-2xl">
               <img className="w-20 mx-auto" src={Spring} alt="Spring icon" />
               <p>Spring</p>
             </div>
@@ -42,15 +42,15 @@ const Skills = () => {
 
           <div className="grid gap-6">
             <p className="text-lg sm:text-xl lg:text-2xl mb-4">Frontend</p>
-            <div className="shadow-md shadow-[#040c16]">
+            <div className="shadow-2xl">
               <img className="w-20 mx-auto" src={Html5} alt="HTML5 icon" />
               <p>HTML5</p>
             </div>
-            <div className="shadow-md shadow-[#040c16] ">
+            <div className="shadow-2xl">
               <img className="w-20 mx-auto" src={ReactLogo} alt="React icon" />
               <p>React</p>
             </div>
-            <div className="shadow-md shadow-[#040c16] ">
+            <div className="shadow-2xl">
               <img
                 className="w-20 mx-auto"
                 src={TailWind}
@@ -62,15 +62,15 @@ const Skills = () => {
 
           <div className="grid gap-6">
             <p className="text-lg sm:text-xl lg:text-2xl mb-4">Tools</p>
-            <div className="shadow-md shadow-[#040c16] ">
+            <div className="shadow-2xl">
               <img className="w-20 mx-auto" src={Docker} alt="Docker icon" />
               <p>Docker</p>
             </div>
-            <div className="shadow-md shadow-[#040c16] ">
+            <div className="shadow-2xl">
               <img className="w-20 mx-auto" src={Git} alt="Git icon" />
               <p>Git</p>
             </div>
-            <div className="shadow-md shadow-[#040c16] ">
+            <div className="shadow-2xl">
               <img
                 className="w-20 mx-auto"
                 src={Kubernetes}
@@ -82,11 +82,11 @@ const Skills = () => {
 
           <div className="grid gap-6">
             <p className="text-lg sm:text-xl lg:text-2xl mb-4">Databases</p>
-            <div className="shadow-md shadow-[#040c16] ">
+            <div className="shadow-2xl">
               <img className="w-20 mx-auto" src={MySQL} alt="MySQL icon" />
               <p>MySQL</p>
             </div>
-            <div className="shadow-md shadow-[#040c16] ">
+            <div className="shadow-2xl">
               <img className="w-20 mx-auto" src={MongoDB} alt="MongoDB icon" />
               <p>MongoDB</p>
             </div>
